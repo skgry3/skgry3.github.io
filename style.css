@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 5;
+    background-color: red;
+}
+nav{
+    background-color: blue;
+}
+button{
+    width: 90%;
+    height: 90%;
+}
+
+.flex-container-row{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+.button-container{
+    width: 30%;
+    height: 10%;
+}
+.center-text {
+    text-align: center;
+}
