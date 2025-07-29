@@ -54,27 +54,27 @@ function showImg() {
         //switch src 
         switch (imgTracker) {
             case 1:
-                image.src = 'Images/ringo-starr.jpg';
+                image.src = './Images/ringo-starr.jpg';
                 flavourText.innerHTML = 'Drummer: Ringo Star';
                 break;
             case 2:
-                image.src = 'Images/chad-smith.jpeg';
+                image.src = './Images/chad-smith.jpeg';
                 flavourText.innerHTML = 'Drummer: Chad Smith';
                 break;
             case 3:
-                image.src = 'Images/dave-grohl.jpg';
+                image.src = './Images/dave-grohl.jpg';
                 flavourText.innerHTML = 'Drummer: Dave Grohl';
                 break;
             case 4:
-                image.src = 'Images/buddy-rich.jpg';
+                image.src = './Images/buddy-rich.jpg';
                 flavourText.innerHTML = 'Drummer: Buddy Rich';
                 break;
             case 5:
-                image.src = 'Images/neil-peart.jpg';
+                image.src = './Images/neil-peart.jpg';
                 flavourText.innerHTML = 'Drummer: Neil Peart';
                 break;
             case 6:
-                image.src = 'Images/dave-weckl.jpg';
+                image.src = './Images/dave-weckl.jpg';
                 flavourText.innerHTML = 'Drummer: Dave Weckl';
                 break;
         }
@@ -158,14 +158,14 @@ page0.style.display = "block";
 
 //drumset
 //sounds
-const snareAudio = new Audio("/Audio/Snare.wav");
-const kickAudio = new Audio("/Audio/Kick.wav");
-const tom1Audio = new Audio("/Audio/Tom1.wav");
-const tom2Audio = new Audio("/Audio/Tom2.wav");
-const floortomAudio = new Audio("/Audio/FloorTom.wav");
-const hihatAudio = new Audio("/Audio/Hihat.wav");
-const crashAudio = new Audio("/Audio/Crash.wav");
-const rideAudio = new Audio("/Audio/Ride.wav");
+const snareAudio = new Audio("./Audio/Snare.wav");
+const kickAudio = new Audio("./Audio/Kick.wav");
+const tom1Audio = new Audio("./Audio/Tom1.wav");
+const tom2Audio = new Audio("./Audio/Tom2.wav");
+const floortomAudio = new Audio("./Audio/FloorTom.wav");
+const hihatAudio = new Audio("./Audio/Hihat.wav");
+const crashAudio = new Audio("./Audio/Crash.wav");
+const rideAudio = new Audio("./Audio/Ride.wav");
 
 
 var drums = document.querySelectorAll(".drum-btn");
