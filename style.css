@@ -1,33 +1,414 @@
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-body{
-    display: flex;
-    flex-direction: column;
-}
-header{
-    flex: 5;
-    background-color: red;
-}
-nav{
-    background-color: blue;
-}
-button{
-    width: 90%;
-    height: 90%;
+    width: 100%;
 }
 
-.flex-container-row{
+body {
+    background-color: beige;
+    display: block;
+}
+
+header {
+    background-color: beige;
+}
+
+/*nav*/
+nav {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
     display: flex;
-    flex-flow: row nowrap;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#dropdown {
+    width: 100%;
+    padding: 15px,15px;
+}
+
+#hamburg-btn {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    gap: 15px;
+
+    display: flex;
     justify-content: space-evenly;
+    flex-direction: row;
 }
-.button-container{
-    width: 30%;
-    height: 10%;
+
+nav ul.show {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
-.center-text {
+
+#dropdown-content {
+    background-color: inherit;
+    width: 100%;
+    z-index: inherit;
+}
+
+nav ul li button {
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    color: white;
     text-align: center;
+    border: none;
+    padding: 0%;
+    position: relative;
+    font-size: 2vw;
+}
+
+/*Menu page*/
+.header-bg-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#leftArrow {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 3vw;
+    font-size: 200%;
+}
+
+#rightArrow {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    height: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 3vw;
+    font-size: 200%;
+}
+
+.bg-img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 1s ease-in;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.fade-out {
+    opacity: 0;
+}
+
+.text-container {
+    width: 95%;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(204, 180, 140);
+    text-align: center;
+}
+
+.flavour-text {
+    position: relative;
+    z-index: inherit;
+    font-size: 2vw;
+}
+
+.song-list {
+    background-color: rgb(79, 46, 29);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.song-list ul {
+    list-style: circle;
+    list-style-position: inside;
+    font-size: 2vw;
+}
+
+.song-list li {
+    color: rgb(204, 180, 140);
+}
+
+#Page0-btn {
+    display: none;
+}
+
+/*page styles*/
+.pages {
+    display: block;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(89, 72, 47);
+    text-decoration: underline;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3vw;
+    color: rgb(119, 85, 69);
+}
+
+.sub-section {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.sub-section-title {
+    width: 100%;
+    font-size: 3vw;
+    color: rgb(119, 85, 69);
+}
+
+.section-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 10px
+}
+
+.img-text-inline {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.section-container {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(245, 217, 168);
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.content {
+    text-wrap-style: pretty;
+    text-align: center;
+    font-size: 2vw;
+}   
+
+/*Drum Kit Page*/
+#Page1 {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    margin: 3vh;
+    background-color: rgb(239, 203, 156);
+    border-radius: 15px;
+}
+
+.drum-img {
+    width: 100%;
+}
+
+.drum-btn {
+    width: 100%;
+    height: 100%;
+}
+
+/*Rudiment page*/
+#Page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    margin: 3vh;
+    background-color: rgb(239, 203, 156);
+    border-radius: 15px;
+}
+
+.rudiment-img {
+    width: 80%;
+}
+
+#rudi-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.rudi-tab button {
+    width: auto;
+    height: auto;
+    background-color: rgb(119, 85, 69);
+    color: white;
+    text-align: center;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 5px;
+    position: relative;
+    font-size: 2vw;
+}
+
+.rudi-tab-content {
+    width: 100%;
+    background-color: rgb(119, 85, 69);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rudi-img {
+    height: 100%;
+}
+
+/*Grooves page*/
+#Page3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    margin: 3vh;
+    background-color: rgb(239, 203, 156);
+    border-radius: 15px;
+}
+
+.groove-img {
+    max-height: 120px;
+    height: auto;
+    max-width: 440px;
+    width: 100%;
+}
+
+.quiz {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quiz-text {
+    font-size: 2vw;
+}
+
+/*Simulation*/
+#Page4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+    margin: 3vh;
+    background-color: rgb(239, 203, 156);
+    border-radius: 15px;
+}
+
+
+/*Responsive*/
+@media (max-width:800px) {
+    nav {
+        height: auto;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    #hamburg-btn {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: inherit;
+        text-align: left;
+        border: none;
+    }
+
+    #hamburg-img {
+        width: 50px;
+    }
+
+    nav ul li button {
+        font-size: 5vw;
+    }
+
+    .flavour-text {
+        font-size: 4vw;
+    }
+
+    #learn-more-link {
+        font-size: 3vw;
+    }
+
+    #Page1 {
+        margin-top: 7vh;
+    }
+
+    .section-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    #Page2 {
+        margin-top: 7vh;
+    }
+
+    #rudi-nav {
+        flex-direction: column;
+    }
+
+    .rudi-tab button {
+        width: 90%
+    }
+
+    .rudi-img {
+        height: auto;
+    }
+
+    #Page3 {
+        margin-top: 7vh;
+    }
+
+
+    #Page4 {
+        margin-top: 7vh;
+    }
+
+    #qrCodeImg {
+        display: none;
+    }
+
+    /*hide QR code */
+    footer h1 {
+        background: lightgreen;
+    }
+
+    footer h1::after {
+        content: "(mobile)";
+    }
+
+    /*append text 'mobile’ */
+
+}
+
+.show {
+    display: block;
 }

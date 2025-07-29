@@ -1,39 +1,379 @@
 <!DOCTYPE html>
-<html lang = en>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Starter HTML JS CSS</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <h1 class="center-text">Drum Set</h1>
-        </header>
-        <nav>
-            <div class="flex-container-row">
-                <div class="button-container">
-                    <button>
-                        <!--Home Page button-->
-                    </button>
+<html lang=en>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Drum Set</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header id="Page0">
+        <div class="header-bg-container">
+            <button id="leftArrow">&#10094;</button>
+            <button id="rightArrow">&#10095;</button>
+            <!--Bg Image-->
+            <img src="Images/ringo-starr.jpg" alt="ringo star" class="bg-img">
+            <!--Flavour text-->
+            <article class="text-container">
+                <h2 class="flavour-text">Drummer: Ringo Star</h2>
+            </article>
+
+        </div>
+    </header>
+    <nav>
+        <div id="dropdown">
+            <button id="hamburg-btn">
+                <img id="hamburg-img" src="/Images/hamburg-icon.png" alt="menu icon">
+            </button>
+            <ul id="dropdown-contents">
+                <li>
+                    <button id="Page0-btn">Menu</button>
+                </li>
+                <li>
+                    <button id="Page1-btn">Drum Kit</button>
+                </li>
+                <li>
+                    <button id="Page2-btn">Rudiments</button>
+                </li>
+                <li>
+                    <button id="Page3-btn">Grooves</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page">
+        <div id="Page1">
+            <h1 class="page-title">Drum Kit</h1>
+            <div>
+                <h2 class="section-title">Parts of a drum kit</h2>
+                <p class="section-title">(mainly a 5 piece drum kit)</p>
+                <div>
+                    <img src="/Images/topdown-drum.png" alt="drums" class="drum-img">
                 </div>
-                <div class="button-container">
-                    <button>
-                        <!--Page 1 button-->
-                    </button>
-                </div>
-                <div class="button-container">
-                    <button>
-                        <!--Page 2 button-->
-                    </button>
-                </div>
-                <div class="button-container">
-                    <button>
-                        <!--Page 3 button-->
-                    </button>
+                <div>
+                    <!--snare-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="snare">Snare</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/snare-drum.jpg" alt="snare-img" class="section-img">
+                            <p class="content">
+                                The snare is one of the main drums of a kit, all drum kits will have one.
+                                This is because of its 'crack' or 'pop' sound that it makes, caused by the metal strings
+                                attached to it at the bottom.
+                                It is played using sticks. There are 3 ways to hit the snare, normal, cross stick or
+                                rimshot.
+                                The snare serves diffrent purposes depending on the type of beat played.
+                                It is used as a backbeat in most beats.
+                                The snare and kick usually works together to form most grooves.
+                            </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="snare drum-btn">s</button>
+                    </div>
+                    <!--kick-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="kick">Kick</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/kick-drum.jpg" alt="kick-img" class="section-img">
+                            <p class="content">
+                                The kick drum is one of the main drums of a kit, all drum kits will have one.
+                                This is because of its deep and resonating sound it makes, caused by how big the drum is
+                                and being tuned to a lower pitch.
+                                It is played using a pedal drummers step on. Another pedal can also be attached to allow
+                                the drummer to play grooves that require double bass drums.
+                                The kick serves diffrent purposes. Most of the time it serves as a foundation of the
+                                beat.
+                                The kick and snare usually works together to form most grooves.
+                            </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="kick drum-btn">x</button>
+                    </div>
+                    <!--hihat-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="hihat">Hi-Hat</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/hihat.jpg" alt="hihat-img" class="section-img">
+                            <p class="content">
+                                The Hi-Hat is one of the main cymbals of a kit, all drum kits will have one.
+                                This is because of its short and sharp or loose sound that it makes, caused by two
+                                cymbals stacked on top of one another.
+                                Its is played using sticks and stepping on a pedal to control the sound it makes,
+                                stepping on it to make the short and sharp closed Hi-Hat sound or lifting up your feet
+                                to make a loose open Hi-Hat sound.
+                                The Hi-Hat mainly serves the purpose of providing a steady rhythemic pulse.
+                                It usually works with the Snare and Kick to form most grooves.
+                            </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="hihat drum-btn">a</button>
+                    </div>
+                    <!--crash-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="crash">Crash</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/crash.jpg" alt="crash-img" class="section-img">
+                            <p class="content">
+                                The crash is one of the main cymbals of a kit, all drum kits will have one.
+                                This is because of the crash sound that it makes, caused by its size and thickness.
+                                Its is played using sticks, hitting it close to the edge of the cymbal.
+                                The crash mainly serves the purpose of an exclamation, highlighting key moments.
+                                It can work with the Snare and Kick to make a groove. </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="crash drum-btn">q</button>
+                    </div>
+                    <!--tom1-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="tom1">High Tom</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/tom1.jpg" alt="tom1-img" class="section-img">
+                            <p class="content">
+                                The high tom is one of the main drums of a kit, all drum kits will have one.
+                                This is because of its 'tah' sound that it makes.
+                                Its is played using sticks.
+                                Its purpose is often used in in drum fills, creating melodic movement when combined with
+                                mid and floor toms.
+                            </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="tom1 drum-btn">w</button>
+                    </div>
+                    <!--tom2-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="tom2">Mid Tom</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/tom2.jpg" alt="tom2-img" class="section-img">
+                            <p class="content">
+                                The mid tom is one of the main drums of a kit, all drum kits will have one.
+                                This is because of its 'doom' sound that it makes.
+                                Its is played using sticks.
+                                Its purpose is often used in in drum fills, creating melodic movement when combined with
+                                high and floor toms.
+                            </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="tom2 drum-btn">e</button>
+                    </div>
+                    <!--floortom-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="floortom">Floor Tom</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/floortom.jpg" alt="floortom-img" class="section-img">
+                            <p class="content">
+                                The floor tom is one of the main drums of a kit, all drum kits will have one.
+                                This is because of its 'boom' sound that it makes.
+                                Its is played using sticks.
+                                Its purpose is often used in in drum fills, creating melodic movement when combined with
+                                high and mid toms.
+                            </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="floortom drum-btn">d</button>
+                    </div>
+                    <!--ride-->
+                    <div class="sub-section  section-container">
+                        <h3 class=" sub-section-title" id="ride">Ride</h3>
+                        <div class="img-text-inline">
+                            <img src="/Images/ride.jpg" alt="ride-img" class="section-img">
+                            <p class="content">
+                                The ride is one of the main cymbals of a kit, all drum kits will have one.
+                                This is because of its 'ping' or 'ding' sound that it makes, caused by hitting the bow
+                                or the bell.
+                                Its is played using sticks.
+                                The ride mainly serves the purpose of providing a steady rhythemic pulse, more smooth
+                                and open compared to the hi-hat.
+                                It usually works with the Snare and Kick to form most grooves.
+                            </p>
+                        </div>
+                        <p class="content">(Click on the button below to listen)</p>
+                        <button class="ride drum-btn">r</button>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </body>
+        </div>
+        <div id="Page2">
+            <h1 class="page-title">Rudiments</h1>
+            <div class="img-text-inline section-container">
+                <p class="section-title">
+                    Rudiments are the basic building blocks of drumming, essentially the vocabulary of drum
+                    technique. Its shown with which hand is used on which hit, shown my R and L meaning right and left
+                    respectively.
+                </p>
+                <img src="/Images/rudiments.jpg" alt="rudiments" class="rudiment-img">
+            </div>
+            <div class="section-container">
+                <h2 class="section-title">Examples</h2>
+                <ul id="rudi-nav">
+                    <li class="single rudi-tab">
+                        <button id="single-btn">Single Stroke</button>
+                        <div class="rudi-tab-content" id="single-content">
+                            <div class="img-text-inline">
+                                <img src="Images/single.jpg" alt="single stroke" class="rudi-img section-img">
+                                <p class="text-container content">The most basic rudiment. Alternate your left and right
+                                    hand every hit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="double rudi-tab">
+                        <button id="double-btn">Double Stroke</button>
+                        <div class="rudi-tab-content" id="double-content">
+                            <div class="img-text-inline">
+                                <img src="Images/double.jpg" alt="double stroke" class="rudi-img section-img">
+                                <p class="text-container content">A step up from single stroke. Alternate your left and
+                                    right hand every other hit.</p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="paradiddle rudi-tab">
+                        <button id="paradiddle-btn">Paradiddle</button>
+                        <div class="rudi-tab-content" id="paradiddle-content">
+                            <div class="img-text-inline">
+                                <img src="Images/para.jpg" alt="paradiddle" class="rudi-img section-img">
+                                <p class="text-container content">A combination of single and double strokes. Play
+                                    single then double stroke in a RLRR LRLL
+                                    pattern.</p>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="flam rudi-tab">
+                        <button id="flam-btn">Flam</button>
+                        <div class="rudi-tab-content" id="flam-content">
+                            <div class="img-text-inline">
+                                <img src="/Images/flam.jpg" alt="flam" class="rudi-img section-img">
+                                <p class="text-container content">One of the basic rudiments. Instead of playing both
+                                    hands seperately, use both at the
+                                    smae time, one a bit delayed.</p>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="Page3">
+            <h1 class="page-title">Grooves</h1>
+            <p class="content">Grooves are the main beat of the song that repeats in a song</p>
+            <div class="section-container">
+                <h2 class="section-title">Basic Grooves</h2>
+                <div class="sub-section">
+                    <h3 class="sub-section-title">Four-on-the-floor</h3>
+                    <div>
+                        <p class="content">A steady, even groove. Every beat is hit the same way.</p>
+                        <img src="/Images/4OTF.png" alt="4-on-the-floor" class="groove-img">
+                        <div class="song-list">
+                            <p class="text-container content">Songs that use this:</p>
+                            <ul>
+                                <li>Billie Jean - Micheal Jackson</li>
+                                <li>Another One Bites the Dust - Queen</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section-title">Backbeat</h3>
+                    <div>
+                        <p class="content">A strong, driving groove. Makes the music feel like its moving forward</p>
+                        <img src="/Images/backbeat.png" alt="backbeat" class="groove-img">
+                        <div class="song-list">
+                            <p class="text-container content">Songs that use this:</p>
+                            <ul>
+                                <li>Back In Black - AC/DC</li>
+                                <li>Uptown Funk - Mark Ronson, Bruno Mars</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section-title">Bossa Nova</h3>
+                    <div>
+                        <p class="content">A soft, gentle Brazilian rhythm that feels like a slow, relaxed sway. </p>
+                        <img src="/Images/bossa-nova.png" alt="bossa nova" class="groove-img">
+                        <div class="song-list">
+
+                            <p class="text-container content">Songs that use this:</p>
+                            <ul class="song-list">
+                                <li>The Girl from Ipanema - Frank Sinatra, Antônio Carlos Jobim</li>
+                                <li>Fly Me To The Moon - Joe Harnell</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section-title">Swing</h3>
+                    <div>
+                        <p class="content">A bouncy and smooth groove that feels like dancing or gliding instead of
+                            walking straight. </p>
+                        <img src="/Images/swing.png" alt="swing" class="groove-img">
+                        <div class="song-list">
+
+                            <p class="text-container content">Songs that use this:</p>
+                            <ul class="song-list">
+                                <li>Sing, Sing, Sing - Benny Goodman</li>
+                                <li>Feeling Good - Micheal Bublé</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-container" id="quiz-container">
+                <h2 class="section-title">Groove Quiz</h2>
+                <fieldset class="content">
+                    <legend class>1. What groove is used in "Espresso" - Sabrina Carpenter</legend>
+                    <input type="radio" name="q1" value="4OTF"> Four-on-the-floor
+                    <input type="radio" name="q1" value="Backbeat"> Backbeat
+                    <input type="radio" name="q1" value="Bossa"> Bossa Nova
+                    <input type="radio" name="q1" value="Swing"> Swing
+                </fieldset>
+                <fieldset class="content">
+                    <legend class="sub-section">2. What groove is played swung?</legend>
+                    <input type="radio" name="q2" value="4OTF"> Four-on-the-floor
+                    <input type="radio" name="q2" value="Backbeat"> Backbeat
+                    <input type="radio" name="q2" value="Bossa"> Bossa Nova
+                    <input type="radio" name="q2" value="Swing"> Swing
+                </fieldset>
+                <fieldset class="content">
+                    <legend class="sub-section">3. What varient of this groove is used in "Beat it" - Micheal Jackson?
+                    </legend>
+                    <input type="radio" name="q3" value="4OTF"> Four-on-the-floor
+                    <input type="radio" name="q3" value="Backbeat"> Backbeat
+                    <input type="radio" name="q3" value="Bossa"> Bossa Nova
+                    <input type="radio" name="q3" value="Swing"> Swing
+                </fieldset>
+                <fieldset class="content">
+                    <legend class="sub-section">4. Stevie Wonder's "Sir Duke" is heavily inspired by jazz. Despite being
+                        a funk song, which groove is heard in it?</legend>
+                    <input type="radio" name="q4" value="4OTF"> Four-on-the-floor
+                    <input type="radio" name="q4" value="Backbeat"> Backbeat
+                    <input type="radio" name="q4" value="Bossa"> Bossa Nova
+                    <input type="radio" name="q4" value="Swing"> Swing
+                </fieldset>
+                <fieldset class="content">
+                    <legend class="sub-section">5. Most elevator music use this groove.</legend>
+                    <input type="radio" name="q5" value="4OTF"> Four-on-the-floor
+                    <input type="radio" name="q5" value="Backbeat"> Backbeat
+                    <input type="radio" name="q5" value="Bossa"> Bossa Nova
+                    <input type="radio" name="q5" value="Swing"> Swing
+                </fieldset>
+                <div class="content">
+                    <button class="content" id="btnSubmit">Submit Quiz</button>
+                    <h3 id="scorebox">Not submitted</h3>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h1>QR code</h1>
+            <img id="qrCodeImg" alt="qrcode" src="qrcode.png">
+        </footer>
+    </div>
+</body>
+
 </html>
